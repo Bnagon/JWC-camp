@@ -7,6 +7,53 @@
     font-family: 'Roboto', sans-serif;
 
 }
+.list{
+    display: none;
+}
+.bar{
+    margin-top: 10px;
+    position: absolute;
+    width: 100%;
+    text-align: right;
+    top: 0%;
+    height: 40px;
+    background: none;
+    transition: .4s;
+
+}
+.bar button:active{
+    background: none;
+}
+.bar button:hover{
+    text-decoration: underline;
+    text-decoration-color: #ffffff;
+    text-decoration-thickness: 3px;
+    transition: .4s;
+}
+.topic button:hover{
+    width: 150px;
+    transition: all .4s;
+    }
+
+.bar button{
+    background: none;
+    border: none;
+    width: 135px;
+    font-size: 18px;
+    text-align: center;
+    color: #ffffff;
+}
+.bd{
+    border: #ffffff;
+    height: 47px;
+    background: #612378;
+    width: 100%;
+    border-style: solid;
+    padding-top: 5px;
+    text-align: right;
+    display: block;
+    z-index: 2;
+}
 
 body {
     background-color: #661080;
