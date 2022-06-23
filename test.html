@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    .bd {
+        border: #ffffff;
+        height: 47px;
+        background: #612378;
+        width: 100%;
+        border-style: solid;
+        padding-top: 5px;
+        text-align: right;
+        display: block;
+        z-index: 2;
+    }
+
+    .bd i {
+        font-size: 25px;
+        margin-right: 8px;
+        border: #ffffff;
+        border-style: solid;
+        width: 35px;
+        height: 30px;
+        text-align: center;
+        padding-top: 5px;
+        border-radius: 10px;
+        transition: .3s;
+        z-index: 3;
+        color: #000000;
+    }
+
+    .bar {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        top: -50%;
+        height: 40px;
+        background: rgb(228, 198, 228);
+        transition: .4s;
+
+    }
+
+    .bar button {
+        width: 33.33%;
+        font-family: 'Chakra Petch', sans-serif;
+        height: 40px;
+        font-size: 15px;
+        outline: none;
+        cursor: pointer;
+        border: none;
+    }
+
+    .about,
+    .block,
+    .book {
+        color: #000000;
+    }
+
+    .bd a:hover .bar {
+        top: 58px;
+    }
+
+    .list:hover .bar {
+        padding-top: 50px;
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="bd"> <a href="#" id="btnbar" style="cursor: default;">
+            <button style="border: none;background: none;" class="list">
+                <i class="fa fa-bars"></i>
+            </button>
+            <div class="bar">
+                <button onclick="location.href='#';">
+                    <span class="about">เกี่ยวกับหมอหมึก</span>
+                </button>
+                <button onclick="location.href='#';">
+                    <span class="block">บทความ</span>
+                </button>
+                <button onclick="location.href='#';">
+                    <span class="book">จองคิว</span>
+                </button>
+            </div>
+        </a>
+    </div>
+</body>
+
+</html>
